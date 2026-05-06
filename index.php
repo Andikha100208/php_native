@@ -31,7 +31,7 @@ if (!$result) {
     <div class="card shadow-sm">
         <div class="card-body">
 
-        <a href="absen_masuk.php" class="btn btn-success mb-3">
+        <a href="tambah.php" class="btn btn-success mb-3">
      + Tambah Absensi
 </a>
             <table class="table table-bordered table-striped table-hover">
@@ -59,11 +59,8 @@ if (!$result) {
                         <td><?= htmlspecialchars($row['tanggal']); ?></td>
                         <td><?= htmlspecialchars($row['status']); ?></td>
                         <td>
-                            <a href="edit.php?id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="hapus.php?id=<?= $row['id']; ?>" 
-                               class="btn btn-danger btn-sm"
-                               onclick="return confirm('Yakin ingin menghapus data ini?')">
-                               Hapus
+                            <a href="edit.php?id=<?= $row['id']; ?>" class="btn btn-warning btn-sm"> Edit </a>
+                            <a href="hapus.php?id=<?= $row['id']; ?>" class="btn btn-danger btn-sm"> Hapus </a>
                             </a>
                         </td>
                     </tr>
